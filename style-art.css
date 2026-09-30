@@ -1,0 +1,79 @@
+/* Illustrated field-journal finish for the case UI. */
+.side-panel{background:#e6deca;color:#303d32;border-left:1px solid #b3a687;box-shadow:-8px 0 25px rgba(29,31,23,.16)}
+.panel-head{border-color:rgba(66,68,48,.19)}
+.panel-head small,.note-label,.section-title{color:#707858}
+.panel-head h1{color:#293a30}
+.icon-button.quiet{color:#626b55}
+.icon-button.quiet:hover{background:rgba(55,67,49,.09)}
+.panel-content{scrollbar-color:#a69a79 transparent}
+.panel-foot{border-color:rgba(66,68,48,.19);color:#69715f}
+.text-button{color:#87543f}
+.note-block,.character-row{border-color:rgba(66,68,48,.17)}
+.note-block p{color:#374337}
+.note-block .small-copy,.empty-note{color:#6c705f}
+.case-stamp{color:#8f654a}
+.case-stamp:before{background:#a86e4e}
+.timeline-row{border-color:rgba(66,68,48,.15);color:#40493b}
+.timeline-row time{color:#8a6846}
+.character-row strong{color:#334033}
+.character-row small{color:#737260}
+.portrait{border-color:#a99c78;background:#718064}
+.evidence-card,.board-chip,.theory-choice{border-color:rgba(67,69,48,.2);background:rgba(255,252,236,.4);color:#364133}
+.evidence-card:hover,.board-chip:hover,.theory-choice:hover{border-color:#a27c4b;background:rgba(255,252,236,.75)}
+.evidence-card h3{color:#354235}
+.evidence-card p,.board-chip small,.board-intro,.theory-box p{color:#727261}
+.evidence-card .evidence-type{color:#76805f}
+.place-button{color:#354235;border-color:rgba(67,69,48,.18)}
+.place-button small{color:#777666}
+.place-arrow,.proof-count{color:#8d7149}
+.connection-box{border-color:rgba(67,69,48,.2);background:rgba(255,252,236,.37)}
+.connection-box p,.connection-item{color:#41483b}
+.relation-button{border-color:rgba(67,69,48,.25);color:#48503f}
+.relation-button:hover{border-color:#9b704b;color:#754d38}
+.connection-item,.theory-box{border-color:rgba(67,69,48,.17)}
+.theory-box h2{color:#354235}
+.submit-case{background:#a9694d;color:#fff1da}
+.submit-case:hover{background:#8d563e}
+.panel-foot .save-dot{background:#738057}
+.modal-scrim:has(.welcome-card){padding:clamp(12px,3vw,36px);background:rgba(12,20,16,.42);backdrop-filter:none}
+.welcome-card{position:relative;width:min(1320px,100%);height:min(790px,calc(100vh - 48px));padding:0;overflow:hidden;border:0;background:#344b3d;box-shadow:0 24px 80px rgba(9,14,11,.38)}
+.welcome-art{position:absolute;inset:0;height:auto;overflow:hidden}
+.welcome-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(17,29,23,.94),rgba(21,34,27,.64) 27%,transparent 72%),linear-gradient(90deg,rgba(16,28,22,.24),transparent 75%)}
+.welcome-art canvas{width:100%;height:100%;display:block;object-fit:cover}
+.welcome-copy{position:absolute;left:clamp(26px,7vw,88px);right:24px;bottom:clamp(32px,8vh,80px);max-width:510px;padding:0}
+.welcome-copy .eyebrow{color:#dbc688}
+.welcome-copy h1{font-size:clamp(44px,6vw,72px);line-height:.98;color:#f1ead9;margin:12px 0 17px}
+.welcome-copy h1 em{color:#d8c17e}
+.welcome-copy p{max-width:440px;color:#e2ddca;font-size:18px;line-height:1.55;text-shadow:0 1px 12px rgba(16,25,19,.6)}
+.welcome-actions{gap:19px;margin-top:24px}
+.welcome-actions small{color:#e1d9bf}
+.primary-button{background:#d5b76f;color:#27372d}
+.primary-button:hover{background:#ecd18f}
+.dialog-card,.settings-card,.result-card{background:#e6deca;color:#303d32;border-color:#af9e77;box-shadow:0 18px 70px rgba(8,13,11,.4)}
+.dialog-top{border-color:rgba(66,68,48,.18)}
+.dialog-top h2,.settings-card h2,.result-card h2{color:#303d32}
+.dialog-top small,.dialog-footer,.eyebrow{color:#797a61}
+.dialog-text{color:#394437}
+.dialog-option{border-color:rgba(67,69,48,.19);background:rgba(255,252,236,.45);color:#394437}
+.dialog-option:hover{border-color:#a9794c;color:#7b5039}
+.dialog-footer button,.modal-close{border-color:rgba(67,69,48,.25);color:#47503e}
+.settings-card p,.result-card p{color:#555e4d}
+.setting-row{border-color:rgba(66,68,48,.18);color:#354235}
+.danger-button{border-color:#ae7159;color:#925039}
+.result-mark{border-color:#8c8059;color:#856f40}
+.result-card .eyebrow{color:#8c7650}
+.toast{background:#e7deca;border-color:#a79876;color:#344034}
+.portrait svg{width:100%;height:100%;display:block}
+.dialog-portrait .animal-face{width:57px;height:62px}
+.game-shell.panel-hidden{grid-template-columns:minmax(0,1fr)}
+.game-shell.panel-hidden .side-panel{display:none}
+@media(max-width:680px){
+  .modal-scrim:has(.welcome-card){padding:0}
+  .welcome-card{width:100%;height:100dvh;max-height:none}
+  .welcome-copy{left:23px;right:22px;bottom:38px}
+  .welcome-copy h1{font-size:45px}
+  .welcome-copy p{font-size:15px;max-width:440px}
+  .welcome-actions{align-items:flex-start;flex-direction:column;gap:11px;margin-top:17px}
+  .dialog-portrait .animal-face{width:48px;height:53px}
+  .game-shell.panel-hidden{grid-template-rows:minmax(390px,1fr)}
+}
